@@ -1,0 +1,145 @@
+/* Class from Inté-2 */
+
+@font-face {
+    font-family: "Aniron","Tengwar Annatar","Party Business";
+    src: url("anirm___.ttf)"), url("tngan.ttf"), url("partybusiness.ttf");
+}
+
+/* Navbar */
+
+#mainNav {
+    justify-content: space-between;
+}
+
+#mainNav li:hover{
+    text-decoration: underline;
+}
+
+#mainNav li {
+    
+    border-right: 1px solid white;
+}
+
+.navbar {
+    background-color: chocolate;
+}
+
+.navbar a {
+    color: #EEEEEF;
+    font-family: "Aniron";
+}
+
+/* Titres */
+
+h1 {
+    font-size: 20px;
+    font-family: "Aniron";
+    margin-left: 40%;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: "Aniron";
+}
+
+/* CSS compiled from SCSS */
+.myRings {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .myRings1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: solid;
+    border-width: 3px;
+    color: black;
+    box-shadow: 0 0 3px black;
+    margin-left: 0px;
+    margin-top: -12px;
+  }
+  
+  .myRings2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid;
+    border-width: 4px;
+    color: black;
+    box-shadow: 0 0 4px black;
+    margin-left: -14px;
+    margin-top: -19px;
+  }
+  
+  .myRings3 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: solid;
+    border-width: 5px;
+    color: black;
+    box-shadow: 0 0 5px black;
+    margin-left: -16px;
+    margin-top: -26px;
+  }
+  
+  .myRings4 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    border: solid;
+    border-width: 6px;
+    color: black;
+    box-shadow: 0 0 6px black;
+    margin-left: -18px;
+    margin-top: -33px;
+  }
+  
+  .myRings5 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    border: solid;
+    border-width: 7px;
+    color: black;
+    box-shadow: 0 0 7px black;
+    margin-left: -20px;
+    margin-top: -40px;
+  }
+  
+  .myRings6 {
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: solid;
+    border-width: 8px;
+    color: black;
+    box-shadow: 0 0 8px black;
+    margin-left: -22px;
+    margin-top: -47px;
+  }
+  
+  .myMedRings {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: solid;
+    border-width: 5px;
+    color: orange;
+    box-shadow: 0 0 2px orange;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  
+  .myBigRing {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: solid;
+    border-width: 10px;
+    color: yellow;
+    box-shadow: 0 0 4px yellow;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
