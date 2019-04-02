@@ -5,14 +5,15 @@ $bordRad: 100px;
 $border: solid;
 $colorRing: black;
 $margRing: -20px;
+$margTop: -5px;
 $thicknessRings: 1px;
-$shadow: 0 0 2em orange;
+$shadow: 0 0 2em black;
 
 .myRings{
   display: flex;
 }
 
-@mixin myRingsMixin ($x, $y, $bordRad, $border, $thicknessRings, $colorRing, $shadow, $margRing) {
+@mixin myRingsMixin ($x, $y, $bordRad, $border, $thicknessRings, $colorRing, $shadow, $margRing, $margTop) {
     width : $x ;
     height : $y ;   
     border-radius: $bordRad;
@@ -21,25 +22,24 @@ $shadow: 0 0 2em orange;
     color: $colorRing;
     box-shadow: $shadow;
     margin-left: $margRing;
+    margin-top: $margTop;
 }
 
 @for $i from 1 through 6 {
     .myRings#{$i} {
-        width: $x + $i*10;
-        height: $y + $i*10;
-        border-radius: $bordRad;
-        border: $border;
-        border-width: $thicknessRings + $i;
-        color: $colorRing;
-        box-shadow: $shadow;
-        margin-left: $margRing;
-
+  @include myRingsMixin(30px + $i*10, 30px + $i*10, 50px, solid, 2px + $i, black, 0 0 2px+$i black, -10px - $i*2, -5px - $i*7);
     }
 }
 
-.myBigRing{
-  @include myRingsMixin(150px, 150px, 100px, solid, 10px, orange, 0 0 2em black, 0px);
+.myMedRings{
+  @include myRingsMixin(50px, 50px, 50px, solid, 5px, orange, 0 0 2px orange, 0px, 0px);
 }
+
+.myBigRing{
+  @include myRingsMixin(150px, 150px, 100px, solid, 10px, yellow, 0 0 4px yellow, 0px, 0px);
+}
+
+
 
 
 
